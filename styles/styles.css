@@ -16,6 +16,13 @@
     font-size: 45px;
     font-weight: 700;
 }
+.section-title .gray {
+    color: var(--gray-text);
+    font-weight: 500;
+}
+.orange {
+    color: var(--orange);
+}
 /*All Sections Paragraph Style*/
 .section-text {
     color: var(--light-text);
@@ -34,6 +41,7 @@
     border-radius: 5px;
     background: #FF900E;
     border: 0;
+    cursor: pointer;
 }
 /*Navigation Design*/
 header {
@@ -51,6 +59,7 @@ header {
     text-align: center;
     font-size: 35px;
     font-weight: 700;
+    cursor: pointer;
 }
 .menu {
     display: flex;
@@ -66,7 +75,7 @@ header {
     color: var(--light-text);
     text-align: center;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 26px;
 }
 .menu li a:hover {
@@ -113,6 +122,9 @@ header {
     height: 220px;
     object-fit: cover;
 }
+.team-content > .section-title {
+    margin-bottom: 10px;
+}
 .team-content > .section-text {
     text-align: left;
 }
@@ -120,7 +132,6 @@ header {
 .featured {
     max-width: 1200px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 30px;
     margin: 100px auto 0;
@@ -144,7 +155,6 @@ header {
 .box > .section-title {
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 5px;
 }
 .box > .section-text {
     font-size: 14px;
@@ -195,10 +205,13 @@ header {
 
 /*Mobile Version Style*/
 @media screen and (max-width: 576px) {
-    .nav{
+    .nav,
+    .featured{
         flex-direction: column;
     }
-    header, .team-img {
+    header,
+    .team-img,
+    .featured {
         padding: 10px;
     }
     .menu {
@@ -238,19 +251,25 @@ header {
         font-size: 30px;
         margin-bottom: 10px;
     }
-    .team-content > .section-text {
+    .team-content > .section-text,
+    .featured-content > .section-text  {
         text-align: center;
+        margin-bottom: 20px;
     }
     .team-img img {
         width: 100%;
         height: 100%;
     }
-     
+    .featured-img img {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 /*Tablet version Style*/
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    .nav {
+    .nav,
+    .featured {
         flex-direction: column;
     }
     header {
@@ -279,5 +298,14 @@ header {
     }
     .team-content {
         text-align: center;
+    }
+    .featured {
+        margin: 100px 20px;
+    }
+    .featured-content > .section-title,
+    .featured-content > .section-text {
+        margin-bottom: 20px;
+        padding: 0;
+        border: 0;
     }
 }
