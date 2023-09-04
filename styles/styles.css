@@ -164,10 +164,11 @@ header {
     }
     .team-section {
         flex-direction: column-reverse;
+        gap: 10px;
     }
     .team-content {
         padding: 20px;
-        margin: 0 auto 20px;
+        margin: 0 auto;
         text-align: center;
     }
     .section-title {
@@ -176,6 +177,10 @@ header {
     }
     .team-content > .section-text {
         text-align: center;
+    }
+    .team-img img {
+        width: 100%;
+        height: 100%;
     }
      
 }
@@ -198,8 +203,8 @@ header {
         padding: 0 50px;
     }
     .team-img img {
-        width: 300px;
-        height: 300px;
+        width: 100%;
+        height: 100%;
     }
     .section-title {
         font-size: 35px;
