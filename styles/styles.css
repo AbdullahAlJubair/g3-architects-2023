@@ -249,7 +249,15 @@ header {
     width: 150px;
     filter: grayscale(1);
 }
-
+/*Footer Section*/
+.footer {
+    max-width: 1200px;
+    height: 30px;
+    margin: 100px auto 50px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #FFF4E7;
+}
 
 
 
