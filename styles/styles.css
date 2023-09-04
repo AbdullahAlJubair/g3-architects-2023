@@ -190,7 +190,8 @@ header {
     color: #fff;
 }
 /*Fact Section Design*/
-.facts {
+.facts,
+.sponsor {
     max-width: 1000px;
     margin: 50px auto 0;
     padding: 20px;
@@ -227,7 +228,27 @@ header {
 }
 
 
-
+/*Sponsor Layout Design*/
+.sponsor-content {
+    text-align: center;
+    margin: 0 auto 50px;
+    max-width: 500px;
+}
+.sponsor-content,
+.sponsor-content > .section-text {
+    text-align: center;
+}
+.sponsor-img {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 160px);
+    gap: 50px;
+    padding: 10px;
+}
+.sponsor-img img {
+    width: 150px;
+    filter: grayscale(1);
+}
 
 
 
@@ -301,9 +322,12 @@ header {
         width: 100%;
         margin: 0 auto;
     }
-    .card-container {
+    .card-container,
+    .sponsor-img  {
         grid-template-columns: repeat(2, 180px);
         gap: 10px;
+        justify-content: space-around;
+        padding: 10px;
     }
 }
 
@@ -352,7 +376,8 @@ header {
     .facts-content {
         margin: 0 auto 50px;
     }
-    .card-container {
+    .card-container,
+    .sponsor-img  {
         grid-template-columns: repeat(2, 200px);
     }
 }
