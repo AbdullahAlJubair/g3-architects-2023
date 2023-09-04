@@ -1,0 +1,92 @@
+* {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --dark-text: #131313;
+    --light-text: #424242;
+    --gray-text: #727272;
+    --orange: #FF900E;
+
+}
+/*All Sections Title Style*/
+.section-title {
+    color: var(--dark-text);
+    font-size: 45px;
+    font-weight: 700;
+}
+/*All Sections Paragraph Style*/
+.section-text {
+    color: var(--light-text);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+/*All Sections Buttons Style*/
+.primary-btn {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 5px;
+    background: #FF900E;
+    border: 0;
+}
+/*Navigation Design*/
+header {
+    background-color: #FF900E1A;
+    margin: 0 auto;
+    padding: 20px 100px 40px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: var(--dark-text);
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu li {
+    list-style: none;
+    margin-right: 50px;
+}
+.menu li a {
+    text-decoration: none;
+    color: var(--light-text);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+/*Banner Design*/
+.banner-content {
+    justify-content: center;
+    max-width: 700px;
+    margin: 100px auto 0;
+    text-align: center;
+}
+.banner-title {
+    color: var(--dark-text);
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.banner-img img {
+    margin: 50px auto 0;
+}
+.banner-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
